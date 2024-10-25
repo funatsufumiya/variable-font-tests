@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'SourceHanSansJP-VF';
+    src: url('../font/SourceHanSansJP-VF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SourceHanSans-VF';
+    src: url('../font/SourceHanSans-VF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('../font/Commissioner_VF_1.001.ttf') format('truetype');
+}
+
+.text {
+  font-size: 48px;
+  font-family: "Commissioner";
+  /* font-family: "SourceHanSansJP-VF"; */
+  /* font-family: "SourceHanSans-VF"; */
+  font-variation-settings: "wght" 400, "wdth" 50, "GRAD" 1;
+  animation: width-animation 1s ease infinite alternate;;
+}
+
+@keyframes width-animation {
+  0%
+  { font-variation-settings: "wght" 100, "wdth" 50, "slnt" 0, "GRAD" 1; }
+  50%
+  { font-variation-settings: "wght" 900, "wdth" 151, "slnt" -12, "GRAD" 1; }
+  100%
+  { font-variation-settings: "wght" 500, "wdth" 151, "slnt" 0, "GRAD" 1; }
+}

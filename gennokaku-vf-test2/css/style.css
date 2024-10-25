@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'SourceHanSansJP-VF';
+    src: url('../font/SourceHanSansJP-VF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SourceHanSans-VF';
+    src: url('../font/SourceHanSans-VF.otf') format('opentype');
+}
+
+.text {
+  font-size: 600px;
+  font-family: "SourceHanSansJP-VF";
+  /* font-family: "SourceHanSans-VF"; */
+  font-variation-settings: "wght" 400, "wdth" 50, "GRAD" 1;
+  animation: width-animation 1s ease infinite alternate;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.text::before {
+    content: "お";
+    animation: change-letter-jp 3s linear infinite alternate;
+    -webkit-animation: change-letter-jp 3s linear infinite alternate;
+    -moz-animation: change-letter-jp 3s linear infinite alternate;
+    -ms-animation: change-letter-jp 3s linear infinite alternate;
+    -o-animation: change-letter-jp 3s linear infinite alternate;
+}
+.text::after {
+    content: "";
+    animation: change-letter-en 3s linear infinite alternate;
+    -webkit-animation: change-letter-en 3s linear infinite alternate;
+    -moz-animation: change-letter-en 3s linear infinite alternate;
+    -ms-animation: change-letter-en 3s linear infinite alternate;
+    -o-animation: change-letter-en 3s linear infinite alternate;
+}
+
+@keyframes width-animation {
+  0% {
+      /* color: #000000; */
+      font-variation-settings: "wght" 250, "wdth" 50, "slnt" 0, "GRAD" 1;
+    }
+  50%   {
+      /* color: #aa0000; */
+      font-variation-settings: "wght" 900, "wdth" 151, "slnt" -12, "GRAD" 1;
+    }
+  100%   {
+      /* color: #99aa00; */
+      font-variation-settings: "wght" 250, "wdth" 151, "slnt" 0, "GRAD" 1;
+    }
+}
+
+@-webkit-keyframes width-animation {
+  0% {
+      /* color: #000000; */
+      font-variation-settings: "wght" 250, "wdth" 50, "slnt" 0, "GRAD" 1;
+    }
+  50%   {
+      /* color: #aa0000; */
+      font-variation-settings: "wght" 900, "wdth" 151, "slnt" -12, "GRAD" 1;
+    }
+  100%   {
+      /* color: #99aa00; */
+      font-variation-settings: "wght" 250, "wdth" 151, "slnt" 0, "GRAD" 1;
+    }
+}
+
+@-ms-keyframes width-animation {
+  0% {
+      /* color: #000000; */
+      font-variation-settings: "wght" 250, "wdth" 50, "slnt" 0, "GRAD" 1;
+    }
+  50%   {
+      /* color: #aa0000; */
+      font-variation-settings: "wght" 900, "wdth" 151, "slnt" -12, "GRAD" 1;
+    }
+  100%   {
+      /* color: #99aa00; */
+      font-variation-settings: "wght" 250, "wdth" 151, "slnt" 0, "GRAD" 1;
+    }
+}
+
+@-o-keyframes width-animation {
+  0% {
+      /* color: #000000; */
+      font-variation-settings: "wght" 250, "wdth" 50, "slnt" 0, "GRAD" 1;
+    }
+  50%   {
+      /* color: #aa0000; */
+      font-variation-settings: "wght" 900, "wdth" 151, "slnt" -12, "GRAD" 1;
+    }
+  100%   {
+      /* color: #99aa00; */
+      font-variation-settings: "wght" 250, "wdth" 151, "slnt" 0, "GRAD" 1;
+    }
+}
